@@ -27,11 +27,11 @@ module.exports = {
         const play = playSong(id);
 
         res.send(play);
+    },
+
+    mostPlayed(req, res) {
+        const mostPlayedS = mostPlayed();
+
+        res.send(mostPlayedS);
     }
-
-    // getMostPlayed(req, res) {
-    //     const mostPlayedSongs = mostPlayed();
-
-    //     res.send(mostPlayedSongs);
-    // }
 }

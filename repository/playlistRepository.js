@@ -28,12 +28,10 @@ function playSong(id){
     return getSongId;
 }
 
-// function mostPlayed(){
-//     let sortedSongs = playlist.sort((a,b) => {
-//         return a.count - b.count;
-//     })
-//     return sortedSongs;
-// }
+function mostPlayed(){
+    let sorted = playlist.sort(sort_by(count, true, parseInt));
+    return sorted;
+}
 
 
-module.exports = {playlist, getPlaylist, addSong, getSong, playSong};
+module.exports = {playlist, getPlaylist, addSong, getSong, playSong, mostPlayed};

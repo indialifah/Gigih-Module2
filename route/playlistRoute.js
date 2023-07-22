@@ -6,6 +6,6 @@ router.get('/', PlaylistController.getPlaylist);
 router.post('/', PlaylistController.addSong);
 router.get('/:id', PlaylistController.getSong);
 router.put('/:id', PlaylistController.playSong);
-// router.get('/popular', PlaylistController.getMostPlayed);
+router.get('/mostplayed', PlaylistController.mostPlayed);
 
 module.exports = router;
